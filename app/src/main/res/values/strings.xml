@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2015 SpiritCroc
+    Email: spiritcroc@gmail.com
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<resources>
+    <!-- Launcher name is static, will not receive customized units -->
+    <string name="app_name_launcher">Carb-list</string>
+
+    <string name="app_name">Carb-list</string>
+
+    <!--Use the following in all strings in which you want to use the customized be unit-->
+    <string name="default_be_unit" translatable="false">carb</string>
+    <string name="default_be_unit_pl" translatable="false">carbs</string>
+
+    <!-- Following in lowercase, uppercase will be done from code-->
+    <string name="default_localized_be_unit">carb</string>
+    <string name="default_localized_be_unit_pl">carbs</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_add">Add</string>
+    <string name="action_search">Search</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_copy">Copy</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_filter">Filter</string>
+    <string name="action_about">About</string>
+    <string name="action_random_entry">Random entry</string>
+
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+    <string name="dialog_add_title">Add entry</string>
+    <string name="dialog_edit_title">Edit entry</string>
+    <string name="dialog_edit_copy_title">Edit copy</string>
+    <string name="dialog_delete_title">Delete entry</string>
+    <string name="dialog_delete_entry_pre">Do you really want to delete" "</string>
+    <string name="dialog_delete_entry_post">\?</string>
+    <string name="dialog_close">Close</string>
+    <string name="dialog_name">Name:</string>
+    <string name="dialog_name_summary">Required</string>
+    <string name="dialog_comment">Comment:</string>
+    <string name="dialog_comment_summary">Your notes</string>
+    <string name="dialog_calculator_title">Calculator</string>
+    <string name="dialog_calculate_weight_to_piece_title">Calculate carbs/piece</string>
+    <string name="dialog_calculate_piece_to_weight_title">Calculate weight/carb</string>
+    <string name="dialog_calculate_up" translatable="false">↑</string>
+    <string name="dialog_calculate_down" translatable="false">↓</string>
+    <string name="dialog_calculate_missing">Calculate by entering weight/piece</string>
+    <string name="dialog_filter_title">Filter</string>
+    <string name="dialog_random_entry_title">Random entry</string>
+    <string name="dialog_new_random">Again</string>
+    <string name="dialog_show">Show</string>
+
+    <string name="dialog_about_0">\nThis app was developed by SpiritCroc.\nWebsite: https://sites.google.com/site/spiritcroc/apps\nEmail: spiritcroc@gmail.com</string>
+    <string name="dialog_about_1_title">\n<u>Used 3rd party components</u></string>
+    <string name="dialog_about_1_body">"Material Design Icons" (licensed under CC BY 4.0) by Google\nLink: http://www.google.com/design/spec/resources/sticker-sheets-icons.html#sticker-sheets-icons-components</string>
+    <string name="dialog_about_app_version">Version</string>
+
+    <string name="dialog_basic_setup">Basic setup</string>
+    <string name="dialog_setup_be_unit">Carbohydrate unit:</string>
+    <string name="dialog_setup_be_unit_plural">Carbohydrate unit plural:</string>
+    <string name="dialog_use_default">Keep default</string>
+    <string-array name="auto_complete_be_unit" translatable="false">
+        <item>carb</item>
+        <item>BE</item>
+        <item>KE</item>
+        <item>KH</item>
+        <item>KHE</item>
+    </string-array>
+    <string-array name="auto_complete_be_unit_plural" translatable="false">
+        <item>carbs</item>
+        <item>BE</item>
+        <item>KE</item>
+        <item>KH</item>
+        <item>KHE</item>
+    </string-array>
+    <string name="dialog_setup_primary_unit">Primary unit:</string>
+    <string name="dialog_setup_secondary_unit">Secondary unit:</string>
+    <string name="dialog_setup_tertiary_unit">Tertiary unit:</string>
+    <string-array name="auto_complete_unit" translatable="false">
+        <item>g</item>
+        <item>ml</item>
+        <item>l</item>
+        <item>oz</item>
+    </string-array>
+    <string-array name="auto_complete_unit_precisions" translatable="false">
+        <item>0</item>
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string name="dialog_show_suggestions">Select…</string>
+    <string name="required">Required</string>
+    <string name="leave_empty_to_disable">Leave empty to disable</string>
+
+    <string name="toast_name_required">Name required!</string>
+    <string name="toast_illegal_value">Illegal value!</string>
+    <string name="toast_primary_unit_required">You can\'t disable the primary unit!</string>
+
+    <string name="grams_per_be_short">\?/carb</string><!--'?' will be replaced by the unit-->
+    <plurals name="be_per_piece_short">
+        <item quantity="one">carb/pc</item>
+        <item quantity="other">carbs/pc</item>
+    </plurals>
+    <string name="amount_in">Amount in</string>
+    <string name="piece">piece</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="per">/</string>
+    <string name="one">1</string>
+    <plurals name="be" translatable="false">
+        <item quantity="one">carb</item>
+        <item quantity="other">carbs</item>
+    </plurals>
+    <plurals name="piece">
+        <item quantity="one">piece</item>
+        <item quantity="other">pieces</item>
+    </plurals>
+    <string name="estimates">≙</string>
+    <string name="not_confirmed">not confirmed</string>
+
+    <string name="show_confirmed_entries">Show confirmed entries</string>
+    <string name="show_not_confirmed_entries">Show not confirmed entries</string>
+
+    <string name="empty_list">No entries yet!</string>
+    <string name="empty_list_filtered">No entries! You might want to disable filters.</string>
+    <string name="empty_list_search">No results! Press the search key in order to search for partially matching results.</string>
+    <string name="empty_list_full_search">No results!</string>
+
+    <string name="sort_order">Sort order</string>
+    <string name="sort_order_name">Alphabetical</string>
+    <string name="sort_order_id">Oldest first</string>
+    <string name="sort_order_id_reverse">Newest first</string>
+    <string name="sort_order_name_value" translatable="false">NAME</string>
+    <string name="sort_order_id_value" translatable="false">ID</string>
+    <string name="sort_order_id_reverse_value" translatable="false">ID_REVERSE</string>
+    <string-array name="sort_order_array" translatable="false">
+        <item>@string/sort_order_name</item>
+        <item>@string/sort_order_id</item>
+        <item>@string/sort_order_id_reverse</item>
+    </string-array>
+    <string-array name="sort_order_value_array" translatable="false">
+        <item>@string/sort_order_name_value</item>
+        <item>@string/sort_order_id_value</item>
+        <item>@string/sort_order_id_reverse_value</item>
+    </string-array>
+
+</resources>

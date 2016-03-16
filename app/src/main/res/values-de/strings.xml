@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2015 SpiritCroc
+    Email: spiritcroc@gmail.com
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<resources>
+    <string name="app_name_launcher">BE-Liste</string>
+    <string name="action_about">Über</string>
+    <string name="action_add">Hinzufügen</string>
+    <string name="action_copy">Kopieren</string>
+    <string name="action_delete">Löschen</string>
+    <string name="action_edit">Bearbeiten</string>
+    <string name="action_filter">Filter</string>
+    <string name="action_search">Suche</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="amount_in">Menge in</string>
+    <string name="app_name">Carb-Liste</string>
+    <string name="confirmed">Bestätigt</string>
+    <string name="default_localized_be_unit">BE</string>
+    <string name="default_localized_be_unit_pl">BE</string>
+    <string name="dialog_about_0">\nDiese App wurde von SpiritCroc entwickelt.\nWebseite: https://sites.google.com/site/spiritcroc/apps\nEmail: spiritcroc@gmail.com</string>
+    <string name="dialog_about_1_body">"Material Design Icons" (lizenziert unter CC BY 4.0) von Google\nLink: http://www.google.com/design/spec/resources/sticker-sheets-icons.html#sticker-sheets-icons-components</string>
+    <string name="dialog_about_1_title">\n<u>Verwendete Komponenten von Drittanbietern</u></string>
+    <string name="dialog_about_app_version">Version</string>
+    <string name="dialog_add_title">Eintrag hinzufügen</string>
+    <string name="dialog_calculate_missing">Berechne durch Eingabe von Gewicht/Stück</string>
+    <string name="dialog_calculate_piece_to_weight_title">Berechne Gewicht/carb</string>
+    <string name="dialog_calculate_weight_to_piece_title">Berechne carbs/Stück</string>
+    <string name="dialog_calculator_title">Rechner</string>
+    <string name="dialog_cancel">Abbrechen</string>
+    <string name="dialog_close">Schließen</string>
+    <string name="dialog_comment">Kommentar:</string>
+    <string name="dialog_comment_summary">Notizen</string>
+    <string name="dialog_delete_entry_pre">Soll" "</string>
+    <string name="dialog_delete_entry_post">" "wirklich gelöscht werden\?</string>
+    <string name="dialog_delete_title">Eintrag löschen</string>
+    <string name="dialog_edit_copy_title">Kopie bearbeiten</string>
+    <string name="dialog_edit_title">Eintrag bearbeiten</string>
+    <string name="dialog_filter_title">Filter</string>
+    <string name="dialog_name">Name:</string>
+    <string name="dialog_name_summary">Benötigt</string>
+    <string name="dialog_no">Nein</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_yes">Ja</string>
+    <string name="estimates">≙</string>
+    <string name="grams_per_be_short">\?/carb</string>
+    <string name="not_confirmed">nicht bestätigt</string>
+    <string name="one">1</string>
+    <string name="per">/</string>
+    <string name="piece">Stück</string>
+    <string name="pref_be_per_piece_precisions">Carb/Stck Genauigkeit</string>
+    <string name="pref_be_per_piece_size">Carb/Stck Textgröße</string>
+    <string name="pref_be_unit">Kohlenhydrate Einheit</string>
+    <string name="pref_be_unit_pl">Kohlenhydrate Einheit Mehrzahl</string>
+    <string name="pref_color_black">Schwarz</string>
+    <string name="pref_color_blue">Blau</string>
+    <string name="pref_color_cyan">Cyan</string>
+    <string name="pref_color_dkgray">Dunkelgrau</string>
+    <string name="pref_color_gray">Grau</string>
+    <string name="pref_color_green">Grün</string>
+    <string name="pref_color_ltgray">Hellgrau</string>
+    <string name="pref_color_magenta">Magenta</string>
+    <string name="pref_color_orange">Orange</string>
+    <string name="pref_color_red">Rot</string>
+    <string name="pref_color_transparent">Transparent</string>
+    <string name="pref_color_white">Weiß</string>
+    <string name="pref_color_yellow">Gelb</string>
+    <string name="pref_colors">Farben</string>
+    <string name="pref_comment_size">Kommentar Textgröße</string>
+    <string name="pref_grams_per_be_size">Gewicht/carb Textgröße</string>
+    <string name="pref_name_size">Name Textgröße</string>
+    <string name="pref_primary_precision">Primäre Einheit Genauigkeit</string>
+    <string name="pref_primary_unit">Primäre Einheit</string>
+    <string name="pref_secondary_precision">Sekundäre Einheit Genauigkeit</string>
+    <string name="pref_secondary_unit">Sekundäre Einheit</string>
+    <string name="pref_tertiary_precision">Tertiäre Einheit Genauigkeit</string>
+    <string name="pref_tertiary_unit">Tertiäre Einheit</string>
+    <string name="pref_text_color">Textfarbe</string>
+    <string name="pref_text_color_be_per_piece">Carb/Stck Textfarbe</string>
+    <string name="pref_text_color_comment">Kommentar Textfarbe</string>
+    <string name="pref_text_color_unconfirmed">Unbestätigte Textfarbe</string>
+    <string name="pref_text_color_weight_for_be">Gewicht/Carb Textfarbe</string>
+    <string name="pref_text_size">Textgröße</string>
+    <string name="pref_units">Einheiten</string>
+    <string name="show_confirmed_entries">Zeige bestätigte Einträge</string>
+    <string name="show_not_confirmed_entries">Zeige nicht bestätigte Einträge</string>
+    <string name="title_activity_settings">Einstellungen</string>
+    <string name="toast_illegal_value">Verbotener Wert!</string>
+    <string name="toast_name_required">Name wird benötigt!</string>
+    <plurals name="pref_precisions_summary">
+        <item quantity="one">%d Nachkommastelle</item>
+        <item quantity="other">%d Nachkommastellen</item>
+    </plurals>
+    <plurals name="be_per_piece_short">
+        <item quantity="one">carb/Stck</item>
+        <item quantity="other">carbs/Stck</item>
+    </plurals>
+    <plurals name="piece">
+        <item quantity="one">Stück</item>
+        <item quantity="other">Stücke</item>
+    </plurals>
+    <string name="action_random_entry">Zufälliger Eintrag</string>
+    <string name="dialog_new_random">Nochmal</string>
+    <string name="dialog_random_entry_title">Zufälliger Eintrag</string>
+    <string name="dialog_show">Zeigen</string>
+    <string name="empty_list">Noch keine Einträge!</string>
+    <string name="empty_list_filtered">Keine Einträge! Möglicherweise sollten Filter deaktiviert werden.</string>
+    <string name="empty_list_full_search">Keine Ergebnisse!</string>
+    <string name="empty_list_search">Keine Ergebnisse! Suche nach teilweise übereinstimmende Ergebnisse durch drücken des Suchen-Knopfes.</string>
+    <string name="dialog_setup_be_unit">Kohlenhydrate Einheit:</string>
+    <string name="dialog_setup_be_unit_plural">Kohlenhydrate Einheit Mehrzahl</string>
+    <string name="dialog_setup_primary_unit">Primäre Einheit</string>
+    <string name="dialog_setup_secondary_unit">Sekundäre Einheit</string>
+    <string name="dialog_setup_tertiary_unit">Tertiäre Einheit</string>
+    <string name="dialog_show_suggestions">Wähle…</string>
+    <string name="dialog_use_default">Behalte Standard</string>
+    <string name="leave_empty_to_disable">Leer lassen zum deaktivieren</string>
+    <string name="required">Benötigt</string>
+    <string name="dialog_basic_setup">Grundlegende Einstellungen</string>
+    <string name="pref_weight_units">Masseneinheiten</string>
+    <string name="sort_order">Sortierreihenfolge</string>
+    <string name="sort_order_id">Älteste zuerst</string>
+    <string name="sort_order_id_reverse">Neueste zuerst</string>
+    <string name="sort_order_name">Alphabetisch</string>
+    <string name="toast_primary_unit_required">Die primäre Einheit kann nicht deaktiviert werden!</string>
+</resources>

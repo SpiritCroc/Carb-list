@@ -1,0 +1,28 @@
+# Name:
+
+Persönliche BE-Liste
+
+
+# Short description:
+
+Erstelle Notizen über die BE-Mengen von Nahrungsmitteln.
+
+
+# Description:
+
+Erstelle eine Liste von allen angesammelten Nahrungsmitteln und deren Kohnenhydrate und verwende sie zur Berechnung.
+(Falls eine andere Einheit als 'BE' verwendet werden soll, kann dies in den Einstellungen eingestellt werden!)
+
+Jeder Eintrag kann folgende Werte speichern:
+- Name
+- Gewicht für eine BE
+- BE für ein Stück
+- Kommentar
+- Bestätigt (Wahrheitswert, der anzeigt, ob die angegebenen Werte bereit erprobt sind. Nicht bestätigte Einträge können durch eine andere Anzeigefarbe in der Liste von bestätigten Einträgen unterschieden werden)
+
+Es müssen bei der Eingabe nicht das Gewicht für eine BE / die BE für ein Stück bekannt sein, die entsprechenden Werte können auch durch Angabe der bekannten Werte berechnet werden.
+
+Nach dem Hinzufügen können die Einträge zur Berechnung verwendet werden.
+
+Keine Idee, was es zum Essen geben soll? Die App kann auch zur Inspiration einen Eintrag zufällig auswählen und anzeigen.
+

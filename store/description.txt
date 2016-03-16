@@ -1,0 +1,28 @@
+# Name:
+
+Personal Carb-list
+
+
+# Short description:
+
+Make notes about the carb values of your food and use them to calculate.
+
+
+# Description:
+
+Create a list of all your collected carbohydrate values and use them to calculate.
+(If you want to use a different unit than 'carb', you can configure it in the settings!)
+
+Each entry can save the following values:
+- Name
+- Weight/carb
+- Carb/piece
+- Comment
+- Confirmed (Set to false in case you want to mark this entry in order to show that you are not sure whether your entered values work)
+Of course, you can change all values afterwards.
+
+You don't have to know the weight per one carb / the carbs per one piece, just enter the numbers you know and the app will do the calculating.
+
+After adding entries, you can use them to calculate.
+
+No idea what to eat? The app can also select and show a random entry to give you some inspiration.

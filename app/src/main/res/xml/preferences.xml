@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2015 SpiritCroc
+    Email: spiritcroc@gmail.com
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen
+        android:title="@string/pref_units">
+        <EditTextPreference
+            android:key="pref_be_unit"
+            android:title="@string/pref_be_unit"
+            android:defaultValue="@string/default_be_unit"/>
+        <EditTextPreference
+            android:key="pref_be_unit_pl"
+            android:title="@string/pref_be_unit_pl"
+            android:defaultValue="@string/default_be_unit_pl"/>
+        <EditTextPreference
+            android:key="pref_be_per_piece_precisions"
+            android:title="@string/pref_be_per_piece_precisions"
+            android:numeric="integer"
+            android:defaultValue="1"/>
+        <PreferenceCategory
+            android:title="@string/pref_weight_units">
+            <EditTextPreference
+                android:key="pref_primary_unit"
+                android:title="@string/pref_primary_unit"
+                android:defaultValue="g"/>
+            <EditTextPreference
+                android:key="pref_primary_precision"
+                android:title="@string/pref_primary_precision"
+                android:numeric="integer"
+                android:defaultValue="0"/>
+            <EditTextPreference
+                android:key="pref_secondary_unit"
+                android:title="@string/pref_secondary_unit"
+                android:defaultValue="ml"/>
+            <EditTextPreference
+                android:key="pref_secondary_precision"
+                android:title="@string/pref_secondary_precision"
+                android:numeric="integer"
+                android:defaultValue="0"/>
+            <EditTextPreference
+                android:key="pref_tertiary_unit"
+                android:title="@string/pref_tertiary_unit"
+                android:defaultValue=""/>
+            <EditTextPreference
+                android:key="pref_tertiary_precision"
+                android:title="@string/pref_tertiary_precision"
+                android:numeric="integer"
+                android:defaultValue="0"/>
+        </PreferenceCategory>
+        </PreferenceScreen>
+    <PreferenceCategory
+        android:title="@string/pref_text_size">
+        <EditTextPreference
+            android:key="pref_name_size"
+            android:title="@string/pref_name_size"
+            android:numeric="integer"
+            android:defaultValue="25"/>
+        <EditTextPreference
+            android:key="pref_grams_per_be_size"
+            android:title="@string/pref_grams_per_be_size"
+            android:numeric="integer"
+            android:defaultValue="15"/>
+        <EditTextPreference
+            android:key="pref_be_per_piece_size"
+            android:title="@string/pref_be_per_piece_size"
+            android:numeric="integer"
+            android:defaultValue="15"/>
+        <EditTextPreference
+            android:key="pref_comment_size"
+            android:title="@string/pref_comment_size"
+            android:numeric="integer"
+            android:defaultValue="15"/>
+        </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_colors">
+        <ListPreference
+            android:key="pref_text_color"
+            android:title="@string/pref_text_color"
+            android:entries="@array/pref_color_array"
+            android:entryValues="@array/pref_color_array_values"
+            android:defaultValue="@string/pref_color_dkgray_value"/>
+        <ListPreference
+            android:key="pref_text_color_unconfirmed"
+            android:title="@string/pref_text_color_unconfirmed"
+            android:entries="@array/pref_color_array"
+            android:entryValues="@array/pref_color_array_values"
+            android:defaultValue="@string/pref_color_blue_value"/>
+        <ListPreference
+            android:key="pref_text_color_weight_for_be"
+            android:title="@string/pref_text_color_weight_for_be"
+            android:entries="@array/pref_color_array"
+            android:entryValues="@array/pref_color_array_values"
+            android:defaultValue="@string/pref_color_dkgray_value"/>
+        <ListPreference
+            android:key="pref_text_color_be_per_piece"
+            android:title="@string/pref_text_color_be_per_piece"
+            android:entries="@array/pref_color_array"
+            android:entryValues="@array/pref_color_array_values"
+            android:defaultValue="@string/pref_color_dkgray_value"/>
+        <ListPreference
+            android:key="pref_text_color_comment"
+            android:title="@string/pref_text_color_comment"
+            android:entries="@array/pref_color_array"
+            android:entryValues="@array/pref_color_array_values"
+            android:defaultValue="@string/pref_color_dkgray_value"/>
+        </PreferenceCategory>
+
+</PreferenceScreen>
