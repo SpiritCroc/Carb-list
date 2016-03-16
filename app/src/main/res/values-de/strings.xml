@@ -29,7 +29,7 @@
     <string name="confirmed">Bestätigt</string>
     <string name="default_localized_be_unit">BE</string>
     <string name="default_localized_be_unit_pl">BE</string>
-    <string name="dialog_about_0">\nDiese App wurde von SpiritCroc entwickelt.\nWebseite: https://sites.google.com/site/spiritcroc/apps\nEmail: spiritcroc@gmail.com</string>
+    <string name="dialog_about_0">\n<a href="https://github.com/SpiritCroc/Carb-list">Quellcode</a>\n\n<a href="https://github.com/SpiritCroc/Carb-list/issues">Probleme melden/Änderungen vorschlagen</a>\n\n<a href="https://github.com/SpiritCroc/Carb-list/commits/master">Entwicklung verfolgen</a>\n\nKontakt: <a href="mailto:spiritcroc@gmail.com?subject=BE-Liste">spiritcroc@gmail.com</a></string>
     <string name="dialog_about_1_body">"Material Design Icons" (lizenziert unter CC BY 4.0) von Google\nLink: http://www.google.com/design/spec/resources/sticker-sheets-icons.html#sticker-sheets-icons-components</string>
     <string name="dialog_about_1_title">\n<u>Verwendete Komponenten von Drittanbietern</u></string>
     <string name="dialog_about_app_version">Version</string>

@@ -37,7 +37,7 @@
 
     <!-- Themes for single views. -->
     <style name="DialogTextViewTheme" parent="android:TextAppearance.Widget.TextView">
-        <item name="android:padding">@dimen/default_padding</item>
+        <item name="android:padding">@dimen/dialog_padding</item>
     </style>
 
 </resources>

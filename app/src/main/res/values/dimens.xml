@@ -19,7 +19,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-    <dimen name="default_padding">3dp</dimen>
+    <dimen name="dialog_padding">4dp</dimen>
     <dimen name="list_item_horizontal_padding">@dimen/activity_horizontal_margin</dimen>
     <dimen name="list_item_vertical_padding">3dp</dimen>
     <dimen name="list_item_vertical_padding_end">16dp</dimen>

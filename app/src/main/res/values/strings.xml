@@ -64,7 +64,7 @@
     <string name="dialog_new_random">Again</string>
     <string name="dialog_show">Show</string>
 
-    <string name="dialog_about_0">\nThis app was developed by SpiritCroc.\nWebsite: https://sites.google.com/site/spiritcroc/apps\nEmail: spiritcroc@gmail.com</string>
+    <string name="dialog_about_0">\n<a href="https://github.com/SpiritCroc/Carb-list">Source code</a>\n\n<a href="https://github.com/SpiritCroc/Carb-list/issues">Report issues/propose changes</a>\n\n<a href="https://github.com/SpiritCroc/Carb-list/commits/master">Changelog/upcoming features</a>\n\nContact: <a href="mailto:spiritcroc@gmail.com?subject=Carb-list">spiritcroc@gmail.com</a></string>
     <string name="dialog_about_1_title">\n<u>Used 3rd party components</u></string>
     <string name="dialog_about_1_body">"Material Design Icons" (licensed under CC BY 4.0) by Google\nLink: http://www.google.com/design/spec/resources/sticker-sheets-icons.html#sticker-sheets-icons-components</string>
     <string name="dialog_about_app_version">Version</string>
