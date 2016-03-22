@@ -50,6 +50,9 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 
+import de.spiritcroc.be_list.settings.Keys;
+import de.spiritcroc.be_list.settings.SettingsActivity;
+
 public class ListActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
     private static final String ARG_SHOW_CONFIRMED = "showConfirmed";
     private static final String ARG_SHOW_NOT_CONFIRMED = "showNotConfirmed";
@@ -207,24 +210,24 @@ public class ListActivity extends AppCompatActivity implements SearchView.OnQuer
 
     public void checkPreferences() {
         // Lots of prefs to keep up-to-date.
-        String unit1 = sharedPreferences.getString("pref_primary_unit", "g");
-        String unit2 = sharedPreferences.getString("pref_secondary_unit", "ml");
-        String unit3 = sharedPreferences.getString("pref_tertiary_unit", "");
-        String beUnit = sharedPreferences.getString("pref_be_unit", "");
-        String beUnitPlural = sharedPreferences.getString("pref_be_unit_pl", "");
-        int precisionBePerPiece = Integer.parseInt(sharedPreferences.getString("pref_be_per_piece_precisions", "1"));
-        int precision1 = Integer.parseInt(sharedPreferences.getString("pref_primary_precision", "0"));
-        int precision2 = Integer.parseInt(sharedPreferences.getString("pref_secondary_precision", "0"));
-        int precision3 = Integer.parseInt(sharedPreferences.getString("pref_tertiary_precision", "0"));
-        int nameSize = Integer.parseInt(sharedPreferences.getString("pref_name_size", "25"));
-        int weightPerBESize = Integer.parseInt(sharedPreferences.getString("pref_grams_per_be_size", "15"));
-        int bePerPieceSize = Integer.parseInt(sharedPreferences.getString("pref_be_per_piece_size", "15"));
-        int commentSize = Integer.parseInt(sharedPreferences.getString("pref_comment_size", "15"));
-        int textColor = Integer.parseInt(sharedPreferences.getString("pref_text_color", getString(R.string.pref_color_dkgray_value)));
-        int textColorUnconfirmed = Integer.parseInt(sharedPreferences.getString("pref_text_color_unconfirmed", getString(R.string.pref_color_blue_value)));
-        int textColorWeightForBE = Integer.parseInt(sharedPreferences.getString("pref_text_color_weight_for_be",getString(R.string.pref_color_dkgray_value)));
-        int textColorBEPerPiece = Integer.parseInt(sharedPreferences.getString("pref_text_color_be_per_piece", getString(R.string.pref_color_dkgray_value)));
-        int textColorComment = Integer.parseInt(sharedPreferences.getString("pref_text_color_comment", getString(R.string.pref_color_dkgray_value)));
+        String unit1 = sharedPreferences.getString(Keys.MASS_PRIMARY_UNIT, "g");
+        String unit2 = sharedPreferences.getString(Keys.MASS_SECONDARY_UNIT, "ml");
+        String unit3 = sharedPreferences.getString(Keys.MASS_TERTIARY_UNIT, "");
+        String beUnit = sharedPreferences.getString(Keys.CARB_UNIT, "");
+        String beUnitPlural = sharedPreferences.getString(Keys.CARB_UNIT_PL, "");
+        int precisionBePerPiece = Integer.parseInt(sharedPreferences.getString(Keys.CARB_PER_PIECE_PRECISION, "1"));
+        int precision1 = Integer.parseInt(sharedPreferences.getString(Keys.MASS_PRIMARY_PRECISION, "0"));
+        int precision2 = Integer.parseInt(sharedPreferences.getString(Keys.MASS_SECONDARY_PRECISION, "0"));
+        int precision3 = Integer.parseInt(sharedPreferences.getString(Keys.MASS_TERTIARY_PRECISION, "0"));
+        int nameSize = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_SIZE_NAME, "25"));
+        int weightPerBESize = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_SIZE_MASS_PER_CARB, "15"));
+        int bePerPieceSize = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_SIZE_CARBS_PER_PIECE, "15"));
+        int commentSize = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_SIZE_COMMENT, "15"));
+        int textColor = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR, getString(R.string.pref_color_dkgray_value)));
+        int textColorUnconfirmed = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR_UNCONFIRMED, getString(R.string.pref_color_blue_value)));
+        int textColorWeightForBE = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR_MASS_PER_CARB,getString(R.string.pref_color_dkgray_value)));
+        int textColorBEPerPiece = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR_CARBS_PER_PIECE, getString(R.string.pref_color_dkgray_value)));
+        int textColorComment = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR_COMMENT, getString(R.string.pref_color_dkgray_value)));
         if (!unit1.equals(this.unit1) ||
                 !unit2.equals(this.unit2) ||
                 !unit3.equals(this.unit3) ||

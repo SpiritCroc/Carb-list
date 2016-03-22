@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Copyright (C) 2015 SpiritCroc
+    Copyright (C) 2015-2016 SpiritCroc
     Email: spiritcroc@gmail.com
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -14,53 +14,13 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/title_activity_settings">
+
     <PreferenceScreen
-        android:title="@string/pref_units">
-        <EditTextPreference
-            android:key="pref_be_unit"
-            android:title="@string/pref_be_unit"
-            android:defaultValue="@string/default_be_unit"/>
-        <EditTextPreference
-            android:key="pref_be_unit_pl"
-            android:title="@string/pref_be_unit_pl"
-            android:defaultValue="@string/default_be_unit_pl"/>
-        <EditTextPreference
-            android:key="pref_be_per_piece_precisions"
-            android:title="@string/pref_be_per_piece_precisions"
-            android:numeric="integer"
-            android:defaultValue="1"/>
-        <PreferenceCategory
-            android:title="@string/pref_weight_units">
-            <EditTextPreference
-                android:key="pref_primary_unit"
-                android:title="@string/pref_primary_unit"
-                android:defaultValue="g"/>
-            <EditTextPreference
-                android:key="pref_primary_precision"
-                android:title="@string/pref_primary_precision"
-                android:numeric="integer"
-                android:defaultValue="0"/>
-            <EditTextPreference
-                android:key="pref_secondary_unit"
-                android:title="@string/pref_secondary_unit"
-                android:defaultValue="ml"/>
-            <EditTextPreference
-                android:key="pref_secondary_precision"
-                android:title="@string/pref_secondary_precision"
-                android:numeric="integer"
-                android:defaultValue="0"/>
-            <EditTextPreference
-                android:key="pref_tertiary_unit"
-                android:title="@string/pref_tertiary_unit"
-                android:defaultValue=""/>
-            <EditTextPreference
-                android:key="pref_tertiary_precision"
-                android:title="@string/pref_tertiary_precision"
-                android:numeric="integer"
-                android:defaultValue="0"/>
-        </PreferenceCategory>
-        </PreferenceScreen>
+        android:title="@string/pref_units"
+        android:fragment="de.spiritcroc.be_list.settings.SettingsUnitsFragment"/>
+
     <PreferenceCategory
         android:title="@string/pref_text_size">
         <EditTextPreference

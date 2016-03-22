@@ -25,6 +25,8 @@ import android.preference.PreferenceManager;
 import java.util.ArrayList;
 import java.util.Locale;
 
+import de.spiritcroc.be_list.settings.Keys;
+
 public abstract class Util {
     public static final boolean DEBUG = false;//to do false for release
     public static final boolean SCREENSHOT = false;//to do false for release
@@ -42,7 +44,7 @@ public abstract class Util {
     public static String getSetUpBEUnit(Context context) {
         if (setUpBEUnit == null)
             setUpBEUnit = PreferenceManager.getDefaultSharedPreferences(context)
-                    .getString("pref_be_unit", getDefaultBEUnit(context));
+                    .getString(Keys.CARB_UNIT, getDefaultBEUnit(context));
         return setUpBEUnit;
     }
     private static String getDefaultBEUnitPl(Context context) {
@@ -53,7 +55,7 @@ public abstract class Util {
     public static String getSetUpBEUnitPl(Context context) {
         if (setUpBEUnitPl == null)
             setUpBEUnitPl = PreferenceManager.getDefaultSharedPreferences(context)
-                    .getString("pref_be_unit_pl", getDefaultBEUnitPl(context));
+                    .getString(Keys.CARB_UNIT_PL, getDefaultBEUnitPl(context));
         return setUpBEUnitPl;
     }
     public static void reload(Context context) {
@@ -62,11 +64,11 @@ public abstract class Util {
     }
     public static void reloadSetUpBEUnit(Context context) {
         setUpBEUnit = PreferenceManager.getDefaultSharedPreferences(context)
-                .getString("pref_be_unit", getDefaultBEUnit(context));
+                .getString(Keys.CARB_UNIT, getDefaultBEUnit(context));
     }
     public static void reloadSetUpBEUnitPl(Context context) {
         setUpBEUnitPl = PreferenceManager.getDefaultSharedPreferences(context)
-                .getString("pref_be_unit_pl", getDefaultBEUnitPl(context));
+                .getString(Keys.CARB_UNIT_PL, getDefaultBEUnitPl(context));
     }
     public static String firstLetterUppercase(String text) {
         String firstLetter = "" + text.charAt(0);
@@ -107,10 +109,10 @@ public abstract class Util {
     // Localize the settings if not set already
     public static boolean localize(Context context) {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
-        if (!sharedPreferences.contains("pref_be_unit")){
-            sharedPreferences.edit().putString("pref_be_unit",
+        if (!sharedPreferences.contains(Keys.CARB_UNIT)){
+            sharedPreferences.edit().putString(Keys.CARB_UNIT,
                     context.getString(R.string.default_localized_be_unit)).apply();
-            sharedPreferences.edit().putString("pref_be_unit_pl",
+            sharedPreferences.edit().putString(Keys.CARB_UNIT_PL,
                     context.getString(R.string.default_localized_be_unit_pl)).apply();
             return true;
         }

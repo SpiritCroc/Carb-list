@@ -40,6 +40,8 @@ import android.widget.LinearLayout;
 import java.util.Arrays;
 import java.util.List;
 
+import de.spiritcroc.be_list.settings.Keys;
+
 public class BasicSetupDialog extends DialogFragment {
     private LinearLayout secondaryLayout, tertiaryLayout;
     private AutoCompleteTextView editUnit, editPrimary, editSecondary, editTertiary;
@@ -79,8 +81,8 @@ public class BasicSetupDialog extends DialogFragment {
         editTertiary.setAdapter(new ArrayAdapter<>(getActivity(), android.R.layout.simple_dropdown_item_1line, weightUnits));
 
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
-        editUnit.setText(sharedPreferences.getString("pref_be_unit", getString(R.string.default_localized_be_unit)));
-        editUnitPlural.setText(sharedPreferences.getString("pref_be_unit_pl", getString(R.string.default_localized_be_unit_pl)));
+        editUnit.setText(sharedPreferences.getString(Keys.CARB_UNIT, getString(R.string.default_localized_be_unit)));
+        editUnitPlural.setText(sharedPreferences.getString(Keys.CARB_UNIT_PL, getString(R.string.default_localized_be_unit_pl)));
 
         // Select correct plural when selecting a unit from dropdown
         editUnit.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -218,22 +220,22 @@ public class BasicSetupDialog extends DialogFragment {
                                 }
                                 if (success) {
                                     SharedPreferences.Editor editor = sharedPreferences.edit();
-                                    editor.putString("pref_be_unit", unit)
-                                            .putString("pref_be_unit_pl", unitPl)
-                                            .putString("pref_primary_unit", primary)
-                                            .putString("pref_secondary_unit", secondary)
-                                            .putString("pref_tertiary_unit", tertiary);
+                                    editor.putString(Keys.CARB_UNIT, unit)
+                                            .putString(Keys.CARB_UNIT_PL, unitPl)
+                                            .putString(Keys.MASS_PRIMARY_UNIT, primary)
+                                            .putString(Keys.MASS_SECONDARY_UNIT, secondary)
+                                            .putString(Keys.MASS_TERTIARY_UNIT, tertiary);
                                     List weightUnitList = Arrays.asList(weightUnits);
                                     String[] weightUnitPrecisions = getResources().getStringArray(R.array.auto_complete_unit_precisions);
                                     //Try to set precisions:
                                     try {
-                                        editor.putString("pref_primary_precision", weightUnitPrecisions[weightUnitList.indexOf(primary)]);
+                                        editor.putString(Keys.MASS_PRIMARY_PRECISION, weightUnitPrecisions[weightUnitList.indexOf(primary)]);
                                     } catch (Exception e){}
                                     try {
-                                        editor.putString("pref_secondary_precision", weightUnitPrecisions[weightUnitList.indexOf(secondary)]);
+                                        editor.putString(Keys.MASS_SECONDARY_PRECISION, weightUnitPrecisions[weightUnitList.indexOf(secondary)]);
                                     } catch (Exception e){}
                                     try {
-                                        editor.putString("pref_tertiary_precision", weightUnitPrecisions[weightUnitList.indexOf(tertiary)]);
+                                        editor.putString(Keys.MASS_TERTIARY_PRECISION, weightUnitPrecisions[weightUnitList.indexOf(tertiary)]);
                                     } catch (Exception e){}
                                     editor.apply();
                                     dismiss();

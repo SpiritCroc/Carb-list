@@ -42,6 +42,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import de.spiritcroc.be_list.settings.Keys;
+
 public class EditDialog extends DialogFragment {
     private static final String ARG_DATABASE_ID  = "databaseID";
     private static final String ARG_NAME  = "name";
@@ -163,11 +165,11 @@ public class EditDialog extends DialogFragment {
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
         units = new ArrayList<>();
-        units.add(sharedPreferences.getString("pref_primary_unit", "g"));
-        String tmpString = sharedPreferences.getString("pref_secondary_unit", "");
+        units.add(sharedPreferences.getString(Keys.MASS_PRIMARY_UNIT, "g"));
+        String tmpString = sharedPreferences.getString(Keys.MASS_SECONDARY_UNIT, "");
         if (!tmpString.equals("")){
             units.add(tmpString);
-            tmpString = sharedPreferences.getString("pref_tertiary_unit", "");
+            tmpString = sharedPreferences.getString(Keys.MASS_TERTIARY_UNIT, "");
             if (!tmpString.equals(""))
                 units.add(tmpString);
         }
