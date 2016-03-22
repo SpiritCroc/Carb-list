@@ -451,12 +451,16 @@ public class ListActivity extends AppCompatActivity implements SearchView.OnQuer
             if (search != null && !search.equals(""))
                 emptyView.setText(fullSearch ?
                         R.string.empty_list_full_search : R.string.empty_list_search);
-            else if (!showConfirmed || !showNotConfirmed)
+            else if (isListFiltered())
                 emptyView.setText(R.string.empty_list_filtered);
             else
                 emptyView.setText(R.string.empty_list);
         } else
             emptyView.setVisibility(View.GONE);
+    }
+
+    public boolean isListFiltered() {
+        return !showConfirmed || !showNotConfirmed;
     }
 
     public String getUnit(int unit) {
@@ -485,6 +489,9 @@ public class ListActivity extends AppCompatActivity implements SearchView.OnQuer
     }
 
     public BEEntryDisplay getRandomBEEntry() {
+        if (display.isEmpty()) {
+            return null;
+        }
         int position = (int) Math.round(Math.random() * (display.size()-1));
         return display.get(position);
     }

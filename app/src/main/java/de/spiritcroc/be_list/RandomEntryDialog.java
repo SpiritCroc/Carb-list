@@ -23,6 +23,7 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.widget.Toast;
 
 public class RandomEntryDialog extends DialogFragment {
     private ListActivity listActivity;
@@ -35,6 +36,12 @@ public class RandomEntryDialog extends DialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         final BEEntryDisplay entry = listActivity.getRandomBEEntry();
+        if (entry == null) {
+            dismiss();
+            Toast.makeText(getActivity().getApplicationContext(), listActivity.isListFiltered() ?
+                    R.string.empty_list_filtered : R.string.empty_list, Toast.LENGTH_LONG).show();
+            return new AlertDialog.Builder(getActivity()).create();
+        }
         return new AlertDialog.Builder(getActivity())
                 .setTitle(R.string.dialog_random_entry_title)
                 .setMessage(entry.getName())
