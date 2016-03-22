@@ -5,6 +5,7 @@ Possible enhancements:
 - CalculatorActivity: Sum function: add entries with amount (multiple possible), sum up BEs
     only save while in app
 - If load-times get recognizable: use an update animation
-- Animate adding new views (in code after scrollToEntry) by letting them animate background color yellow→transparent
+- Animate adding new db entries (in code after scrollToEntry) by letting them animate background color yellow→transparent
 - save unit as string in db to keep unit on pref change
-- App Indexing: index entries for search from launcher? https://developers.google.com/app-indexing/introduction 
+- Some kind of online search (full offline search without pressing enter search button, enter button triggers online search)
+    Possibility to add online search results to personal db
