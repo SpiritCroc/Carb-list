@@ -72,4 +72,14 @@ public class Keys {
 
     public static final String TEXT_COLOR_COMMENT = "pref_text_color_comment";
 
+    public static final String TEXT_COLOR_DARK = "pref_text_color_dark";
+
+    public static final String TEXT_COLOR_UNCONFIRMED_DARK = "pref_text_color_unconfirmed_dark";
+
+    public static final String TEXT_COLOR_MASS_PER_CARB_DARK = "pref_text_color_weight_for_be_dark";
+
+    public static final String TEXT_COLOR_CARBS_PER_PIECE_DARK = "pref_text_color_be_per_piece_dark";
+
+    public static final String TEXT_COLOR_COMMENT_DARK = "pref_text_color_comment_dark";
+
 }

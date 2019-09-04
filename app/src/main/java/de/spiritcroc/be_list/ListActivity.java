@@ -223,11 +223,24 @@ public class ListActivity extends AppCompatActivity implements SearchView.OnQuer
         int weightPerBESize = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_SIZE_MASS_PER_CARB, "15"));
         int bePerPieceSize = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_SIZE_CARBS_PER_PIECE, "15"));
         int commentSize = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_SIZE_COMMENT, "15"));
-        int textColor = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR, getString(R.string.pref_color_dkgray_value)));
-        int textColorUnconfirmed = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR_UNCONFIRMED, getString(R.string.pref_color_blue_value)));
-        int textColorWeightForBE = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR_MASS_PER_CARB,getString(R.string.pref_color_dkgray_value)));
-        int textColorBEPerPiece = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR_CARBS_PER_PIECE, getString(R.string.pref_color_dkgray_value)));
-        int textColorComment = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR_COMMENT, getString(R.string.pref_color_dkgray_value)));
+        int textColor;
+        int textColorUnconfirmed;
+        int textColorWeightForBE;
+        int textColorBEPerPiece;
+        int textColorComment;
+        if (getResources().getBoolean(R.bool.is_night)) {
+            textColor = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR_DARK, getString(R.string.pref_color_ltgray_value)));
+            textColorUnconfirmed = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR_UNCONFIRMED_DARK, getString(R.string.pref_color_cyan_value)));
+            textColorWeightForBE = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR_MASS_PER_CARB_DARK, getString(R.string.pref_color_ltgray_value)));
+            textColorBEPerPiece = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR_CARBS_PER_PIECE_DARK, getString(R.string.pref_color_ltgray_value)));
+            textColorComment = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR_COMMENT_DARK, getString(R.string.pref_color_ltgray_value)));
+        } else {
+            textColor = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR, getString(R.string.pref_color_dkgray_value)));
+            textColorUnconfirmed = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR_UNCONFIRMED, getString(R.string.pref_color_blue_value)));
+            textColorWeightForBE = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR_MASS_PER_CARB, getString(R.string.pref_color_dkgray_value)));
+            textColorBEPerPiece = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR_CARBS_PER_PIECE, getString(R.string.pref_color_dkgray_value)));
+            textColorComment = Integer.parseInt(sharedPreferences.getString(Keys.TEXT_COLOR_COMMENT, getString(R.string.pref_color_dkgray_value)));
+        }
         if (!unit1.equals(this.unit1) ||
                 !unit2.equals(this.unit2) ||
                 !unit3.equals(this.unit3) ||

@@ -76,6 +76,39 @@
             android:entries="@array/pref_color_array"
             android:entryValues="@array/pref_color_array_values"
             android:defaultValue="@string/pref_color_dkgray_value"/>
-        </PreferenceCategory>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_colors_dark">
+        <ListPreference
+            android:key="pref_text_color_dark"
+            android:title="@string/pref_text_color"
+            android:entries="@array/pref_color_array"
+            android:entryValues="@array/pref_color_array_values"
+            android:defaultValue="@string/pref_color_ltgray_value"/>
+        <ListPreference
+            android:key="pref_text_color_unconfirmed_dark"
+            android:title="@string/pref_text_color_unconfirmed"
+            android:entries="@array/pref_color_array"
+            android:entryValues="@array/pref_color_array_values"
+            android:defaultValue="@string/pref_color_cyan_value"/>
+        <ListPreference
+            android:key="pref_text_color_weight_for_be_dark"
+            android:title="@string/pref_text_color_weight_for_be"
+            android:entries="@array/pref_color_array"
+            android:entryValues="@array/pref_color_array_values"
+            android:defaultValue="@string/pref_color_ltgray_value"/>
+        <ListPreference
+            android:key="pref_text_color_be_per_piece_dark"
+            android:title="@string/pref_text_color_be_per_piece"
+            android:entries="@array/pref_color_array"
+            android:entryValues="@array/pref_color_array_values"
+            android:defaultValue="@string/pref_color_ltgray_value"/>
+        <ListPreference
+            android:key="pref_text_color_comment_dark"
+            android:title="@string/pref_text_color_comment"
+            android:entries="@array/pref_color_array"
+            android:entryValues="@array/pref_color_array_values"
+            android:defaultValue="@string/pref_color_ltgray_value"/>
+    </PreferenceCategory>
 
 </PreferenceScreen>

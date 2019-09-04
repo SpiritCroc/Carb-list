@@ -61,6 +61,11 @@ public class SettingsFragment extends CustomPreferenceFragment {
         setListPreferenceSummary(Keys.TEXT_COLOR_MASS_PER_CARB);
         setListPreferenceSummary(Keys.TEXT_COLOR_CARBS_PER_PIECE);
         setListPreferenceSummary(Keys.TEXT_COLOR_COMMENT);
+        setListPreferenceSummary(Keys.TEXT_COLOR_DARK);
+        setListPreferenceSummary(Keys.TEXT_COLOR_UNCONFIRMED_DARK);
+        setListPreferenceSummary(Keys.TEXT_COLOR_MASS_PER_CARB_DARK);
+        setListPreferenceSummary(Keys.TEXT_COLOR_CARBS_PER_PIECE_DARK);
+        setListPreferenceSummary(Keys.TEXT_COLOR_COMMENT_DARK);
 
         setCustomizedUnitTitles();
     }
@@ -79,6 +84,11 @@ public class SettingsFragment extends CustomPreferenceFragment {
             case Keys.TEXT_COLOR_MASS_PER_CARB:
             case Keys.TEXT_COLOR_CARBS_PER_PIECE:
             case Keys.TEXT_COLOR_COMMENT:
+            case Keys.TEXT_COLOR_DARK:
+            case Keys.TEXT_COLOR_UNCONFIRMED_DARK:
+            case Keys.TEXT_COLOR_MASS_PER_CARB_DARK:
+            case Keys.TEXT_COLOR_CARBS_PER_PIECE_DARK:
+            case Keys.TEXT_COLOR_COMMENT_DARK:
                 setListPreferenceSummary(key);
                 break;
         }

@@ -77,6 +77,7 @@
     <string name="pref_color_white">Weiß</string>
     <string name="pref_color_yellow">Gelb</string>
     <string name="pref_colors">Farben</string>
+    <string name="pref_colors_dark">Farben bei Nacht</string>
     <string name="pref_comment_size">Kommentar Textgröße</string>
     <string name="pref_grams_per_be_size">Gewicht/carb Textgröße</string>
     <string name="pref_name_size">Name Textgröße</string>
